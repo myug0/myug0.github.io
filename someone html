@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>For Aizen</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body> 
+<div class="container">
+<label>
+<div class="heart">
+<img
+src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/Lope.png">
+</div>
+<input id="messageState" type="checkbox" style="display:none">
+</label>
+<div class="message">
+<h1>For Aizen</h1>
+<p>Hi Aizen, i'm writing this message for you to read because i just wanted you to know how i feel. Well, I like you, Aizen.
+I have liked you for a year since we were in the 7th grade, August 5, 2024. There hasn't been a day where i haven't thought
+about you. I'm writing this for the purpose of expressing my feelings for you, not expecting for you to reciprocate it—but because
+loving you is more than enough.
+<br><br>This might sound corny or whatever but since the day I've met you, I've been captivated by your elevating demeanor. It was
+something close to as if my world had slowed down as you walked past me that day. I still remember you wearing your brown pants, wearing
+improper uniform. You were just different. What i mean by different was because of your loving and caring presence. I love everything about you—your flaws, talents, passion, personality, your welcoming presence, your care, and literally everything about you. It's your kind, caring, and loving personality i wanna treasure. I want you to know that there's nothing wrong about you and you're perfectly imperfect.
+<br><br>To be completely honest, I was doubting my feelings for you. Because if you don't know, we're friends. As your friend, I've supported you, cheered for you, and especially admired you for your warm and radiant presence—which i will always do. I love how you make your friends laugh, how you're always there for them, and always cared for them. Not to be envious or anything—but i sometimes wished i could've cared for you like that too. 
+<br><br>I want you to feel valued, loved, taken care of, and happy. I don't like you seeing hurt, because it really hurts me too.
+Well sadly, i can only admire you secretly and from afar. Despite that, I just want you to know that I'm rooting for you in all things that you do—whether if it's you playing Volleyball, hanging out with your friends, dancing, caring for you family, and lots more—I'm here. 
+<br><br>I really don't mind loving and admiring you from afar because loving you is more than enough. I hope you know that you're the reason why i want to be better—so you can be treated the way you deserve to be treated. Not to be exaggerating or anything—but I'll treat you with all the love I have. I will try my best to always make you feel special—because you are. If i could, i would want to go on church dates with you—make our relationship with God stronger together.
+<br><br>If you ever feel the world is against you, i'll always be by your side. I'll always be here for you. If i was given a chance to love you, i'll take it every time i can. After all, being with you is like stepping into a caim—surrounded by love and warmth.
+<br><br>Now, i'll end my message with a poem I made that i dedicate to you called "Hanggang tingin lamang”.
+<br><br>Sa tuwing ika’y nasusulyapan, 
+ang araw ko ay buong-buo na.
+Dahil sa presensya mong kahanga-hanga,
+ikaw ang aking kagampangan.
+
+<br><br>Kahit sa dinami-daming beses kitang makita, 
+gusto ko parin itong ulit-ulitin
+sa wagas ng puso kong panganorin.
+Mananatili kang nasa sanggalang.
+
+<br><br>Hindi ko kayang maidama sayo,
+ang pagmamahal na walang pagkupas.
+Ngunit ipapakita ko ito sayo,
+sa tula’t asal na pagsintang-wagas.
+<br><br>That's all from me, my Paraluman.
+</p>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

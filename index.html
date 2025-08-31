@@ -1,96 +1,144 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-   <title>For Aizen</title>
-   <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: #f8f8f8;
-        font-family: 'Georgia', serif;
-      }
-
-      .container {
-        perspective: 1000px;
-      }
-
-      .message {
-        width: 500px;
-        padding: 30px;
-        background: #fff;
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        transform-style: preserve-3d;
-        transform: rotateY(180deg);
-        transition: transform 1s;
-      }
-
-      #messageState:checked ~ .message {
-        transform: rotateY(0);
-      }
-
-      .heart {
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-        margin-bottom: 20px;
-      }
-
-      .heart img {
-        width: 100px;
-      }
-   </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Confession Letter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#fff9f6;--card:#fff;--accent:#ff6b6b;--muted:#6b6b6b}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(135deg,#fff6f2 0%, #f7fbff 100%); padding:36px; display:flex; align-items:center; justify-content:center; min-height:100vh}
+    .card{width:900px; max-width:95%; background:var(--card); border-radius:12px; box-shadow:0 8px 30px rgba(12,20,30,0.08); padding:28px;}
+    header{display:flex; justify-content:space-between; align-items:center; gap:12px}
+    .title{display:flex; align-items:center; gap:12px}
+    h1{font-family:'Great Vibes', cursive; margin:0; font-size:36px; color:var(--accent)}
+    p.lead{margin:0; color:var(--muted)}
+    .controls{display:flex; gap:8px}
+    button{background:transparent; border:1px solid #e6e6e6; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:600}
+    .letter{margin-top:18px; padding:22px; border-radius:8px; background:linear-gradient(180deg,#fff 0%,#fffaf8 100%); border:1px solid #f0e6e6}
+    .letter .meta{display:flex; justify-content:space-between; gap:12px}
+    .to-from{font-size:14px; color:var(--muted)}
+    .body{margin-top:14px; line-height:1.6; font-size:16px; color:#222; white-space:pre-wrap}
+    footer{margin-top:14px; text-align:right; color:#777; font-size:13px}
+    @media(print){body{background:#fff} .controls, footer{display:none} .card{box-shadow:none}}
+  </style>
 </head>
-<body> 
-<div class="container">
-   <label>
-      <div class="heart">
-         <img src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/Lope.png">
+<body>
+  <div class="card">
+    <header>
+      <div class="title">
+        <h1>Confession</h1>
+        <div>
+          <p class="lead">Anonymous message, editable & printable.</p>
+        </div>
       </div>
-      <input id="messageState" type="checkbox" style="display:none">
-   </label>
 
-   <div class="message">
-      <h1>For Aizen</h1>
-      <p>
-         Hi Aizen, i'm writing this message for you to read because i just wanted you to know how i feel. Well, I like you, Aizen.
-         I have liked you for a year since we were in the 7th grade, August 5, 2024. There hasn't been a day where i haven't thought
-         about you. I'm writing this for the purpose of expressing my feelings for you, not expecting for you to reciprocate it—but because
-         loving you is more than enough.
-         <br><br>This might sound corny or whatever but since the day I've met you, I've been captivated by your elevating demeanor. It was
-         something close to as if my world had slowed down as you walked past me that day. I still remember you wearing your brown pants, wearing
-         improper uniform. You were just different. What i mean by different was because of your loving and caring presence. I love everything about you—your flaws, talents, passion, personality, your welcoming presence, your care, and literally everything about you. It's your kind, caring, and loving personality i wanna treasure. I want you to know that there's nothing wrong about you and you're perfectly imperfect.
-         <br><br>To be completely honest, I was doubting my feelings for you. Because if you don't know, we're friends. As your friend, I've supported you, cheered for you, and especially admired you for your warm and radiant presence—which i will always do. I love how you make your friends laugh, how you're always there for them, and always cared for them. Not to be envious or anything—but i sometimes wished i could've cared for you like that too. 
-         <br><br>I want you to feel valued, loved, taken care of, and happy. I don't like you seeing hurt, because it really hurts me too.
-         Well sadly, i can only admire you secretly and from afar. Despite that, I just want you to know that I'm rooting for you in all things that you do—whether if it's you playing Volleyball, hanging out with your friends, dancing, caring for you family, and lots more—I'm here. 
-         <br><br>I really don't mind loving and admiring you from afar because loving you is more than enough. I hope you know that you're the reason why i want to be better—so you can be treated the way you deserve to be treated. Not to be exaggerating or anything—but I'll treat you with all the love I have. I will try my best to always make you feel special—because you are. If i could, i would want to go on church dates with you—make our relationship with God stronger together.
-         <br><br>If you ever feel the world is against you, i'll always be by your side. I'll always be here for you. If i was given a chance to love you, i'll take it every time i can. After all, being with you is like stepping into a caim—surrounded by love and warmth.
-         <br><br>Now, i'll end my message with a poem I made that i dedicate to you called "Hanggang tingin lamang”.
-         <br><br>Sa tuwing ika’y nasusulyapan, 
-         ang araw ko ay buong-buo na.
-         Dahil sa presensya mong kahanga-hanga,
-         ikaw ang aking kagampangan.
+      <div class="controls">
+        <button id="previewBtn">Preview</button>
+        <button id="copyBtn">Copy</button>
+        <button id="downloadBtn" class="accent">Download .txt</button>
+        <button id="printBtn">Print</button>
+      </div>
+    </header>
 
-         <br><br>Kahit sa dinami-daming beses kitang makita, 
-         gusto ko parin itong ulit-ulitin
-         sa wagas ng puso kong panganorin.
-         Mananatili kang nasa sanggalang.
+    <section class="letter">
+      <div class="meta">
+        <div class="to-from">
+          <div>To: <strong>Aizen</strong></div>
+        </div>
+        <div class="date" id="dateDisplay"></div>
+      </div>
 
-         <br><br>Hindi ko kayang maidama sayo,
-         ang pagmamahal na walang pagkupas.
-         Ngunit ipapakita ko ito sayo,
-         sa tula’t asal na pagsintang-wagas.
-         <br><br>That's all from me, my Paraluman.
-      </p>
-   </div>
-</div>
+      <div class="body">
+Hi Aizen, i'm writing this message for you to read because i just wanted you to know how i feel. Well, I like you, Aizen.
 
-<script>
-   // (Optional) You can add more effects here later
-</script>
+I have liked you for a year since we were in the 7th grade, August 5, 2024. There hasn't been a day where i haven't thought about you. I'm writing this for the purpose of expressing my feelings for you, not expecting for you to reciprocate it—but because loving you is more than enough.
+
+This might sound corny or whatever but since the day I've met you, I've been captivated by your elevating demeanor. It was something close to as if my world had slowed down as you walked past me that day. I still remember you wearing your brown pants, wearing improper uniform. You were just different. What i mean by different was because of your loving and caring presence. I love everything about you—your flaws, talents, passion, personality, your welcoming presence, your care, and literally everything about you. It's your kind, caring, and loving personality i wanna treasure. I want you to know that there's nothing wrong about you and you're perfectly imperfect.
+
+To be completely honest, I was doubting my feelings for you. Because if you don't know, we're friends. As your friend, I've supported you, cheered for you, and especially admired you for your warm and radiant presence—which i will always do. I love how you make your friends laugh, how you're always there for them, and always cared for them. Not to be envious or anything—but i sometimes wished i could've cared for you like that too.
+
+I want you to feel valued, loved, taken care of, and happy. I don't like you seeing hurt, because it really hurts me too.
+
+Well sadly, i can only admire you secretly and from afar. Despite that, I just want you to know that I'm rooting for you in all things that you do—whether if it's you playing Volleyball, hanging out with your friends, dancing, caring for you family, and lots more—I'm here.
+
+I really don't mind loving and admiring you from afar because loving you is more than enough. I hope you know that you're the reason why i want to be better—so you can be treated the way you deserve to be treated. Not to be exaggerating or anything—but I'll treat you with all the love I have. I will try my best to always make you feel special—because you are. If i could, i would want to go on church dates with you—make our relationship with God stronger together.
+
+If you ever feel like the world is against you, i'll always be by your side. I'll always be here for you. If i was given a chance to love you, i'll take it every time i can. After all, being with you is like stepping into a caim—surrounded by love and warmth.
+
+Now, i'll end my message with a poem I made that i dedicate to you called "Hanggang tingin lamang”.
+
+Sa tuwing ika’y nasusulyapan, 
+ang araw ko ay buong-buo na.
+Dahil sa presensya mong kahanga-hanga,
+ikaw ang aking kagampangan.
+
+Kahit sa dinami-daming beses kitang makita, 
+gusto ko parin itong ulit-ulitin
+sa wagas ng puso kong panganorin.
+Mananatili kang nasa sanggalang.
+
+Hindi ko kayang maidama sayo,
+ang pagmamahal na walang pagkupas.
+Ngunit ipapakita ko ito sayo,
+sa tula’t asal na pagsintang-wagas.
+
+That's all from me, my Paraluman.
+      </div>
+
+      <footer>Tip: You can copy, download, or print this message anonymously.</footer>
+    </section>
+  </div>
+
+  <script>
+    const previewBtn = document.getElementById('previewBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    const downloadBtn = document.getElementById('downloadBtn');
+    const printBtn = document.getElementById('printBtn');
+    const dateDisplay = document.getElementById('dateDisplay');
+    const bodyDiv = document.querySelector('.body');
+
+    function updateDate(){
+      const d = new Date();
+      dateDisplay.textContent = d.toLocaleDateString();
+    }
+    updateDate();
+
+    previewBtn.addEventListener('click', ()=>{
+      const w = window.open('', '_blank');
+      const html = `<!doctype html><html><head><meta charset="utf-8"><title>Preview</title><style>body{font-family:Inter, Arial; padding:28px; max-width:680px; margin:auto;color:#111;line-height:1.6;white-space:pre-wrap}</style></head><body>` +
+        `${bodyDiv.textContent}</body></html>`;
+      w.document.write(html); w.document.close();
+    });
+
+    copyBtn.addEventListener('click', async ()=>{
+      try{
+        await navigator.clipboard.writeText(bodyDiv.textContent);
+        copyBtn.textContent = 'Copied!';
+        setTimeout(()=>copyBtn.textContent='Copy',1200);
+      }catch(e){
+        alert('Copy failed. You can select the text and press Ctrl+C.');
+      }
+    });
+
+    downloadBtn.addEventListener('click', ()=>{
+      const blob = new Blob([bodyDiv.textContent], {type: 'text/plain'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'confession.txt';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+
+    printBtn.addEventListener('click', ()=>{
+      const w = window.open('', '_blank');
+      w.document.write('<pre style="white-space:pre-wrap; font-family:Inter, Arial; font-size:16px;">'+bodyDiv.textContent+'</pre>');
+      w.document.close();
+      w.print();
+    });
+  </script>
 </body>
 </html>
+
 
